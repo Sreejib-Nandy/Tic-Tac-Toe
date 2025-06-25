@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #003049;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.msg_container {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f77f00;
+}
+
+.main {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f77f00;
+}
+
+.container {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.box {
+    height: 155px;
+    width: 155px;
+    background-color: #fcbf49;
+    border: none;
+    outline: none;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgba(41, 40, 40, 0.351);
+    color: #d62828;
+    cursor: pointer;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    height: 6vh;
+    width: 10vw;
+    background-color: #0077b6;
+    padding: 5px;
+    margin: 0 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 5px 5px rgba(86, 85, 85, 0.436);
+    color: #fff;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width : 1260px) {
+    body {
+        overflow: hidden;
+    }
+    .game {
+        height: 60vh;
+        width : 50%;
+        margin-top: -26px;
+    }
+    .msg_container {
+        font-size: 1rem;
+    }
+    .main {
+        font-size : 1.5rem;
+    }
+    .box {
+       height: 155px;
+       width: 155px; 
+       margin : 3px;
+       padding : 0;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        height : 70vh;
+    }
+    .game {
+        height: 50vh;
+        width : 50%;
+        margin-top: -102px;
+    }
+    .msg_container {
+        font-size: 0.8rem;
+    }
+    .box {
+       height: 150px;
+       width: 150px; 
+    }
+    .btn {
+        width : 15vw;
+        padding : 10px;
+        margin-top : -20px;
+    }
+}
+
+@media only screen and (max-width : 938px) {
+    body {
+        overflow: hidden;
+    }
+    .msg_container {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        height : 70vh;
+    }
+    .game {
+        height: 60vh;
+        width : 65%;
+        margin-top: -32px;
+    }
+    .box {
+       height: 150px;
+       width: 150px; 
+    }
+    .btn {
+        margin-top : -30px;
+    }
+}
+
+@media only screen and (max-width : 730px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        height : 70vh;
+    }
+    .msg_container {
+        font-size: 0.7rem;
+    }
+    .game {
+        height: 50vh;
+        width : 65%;
+        margin-top: -112px;
+    }
+    .box {
+       height: 120px;
+       width: 120px; 
+    }
+    .btn {
+        width : 22vw;
+        padding : 10px;
+        margin-top : -190px;
+    }
+}
+
+@media only screen and (max-width : 585px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        height : 70vh;
+    }
+    .main {
+        font-size : 1.2rem;
+    }
+    .msg_container {
+        font-size: 0.7rem;
+    }
+    .game {
+        height: 40vh;
+        width : 65%;
+        margin-top: -182px;
+    }
+    .box {
+       height: 100px;
+       width: 100px; 
+       font-size: 4rem;
+    }
+    .btn {
+        width : 28vw;
+        padding : 10px;
+        margin-top : -300px;
+        margin-right: 20px ;
+        margin-left: 20px ;
+    }
+}
+
+@media only screen and (max-width : 495px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        height : 70vh;
+    }
+    .msg_container {
+        font-size: 0.7rem;
+    }
+    .game {
+        height: 30vh;
+        width : 65%;
+        margin-top: -272px;
+    }
+    .box {
+       height: 85px;
+       width: 85px; 
+       font-size: 3rem;
+    }
+    .btn {
+        width : 28vw;
+        padding : 10px;
+        margin-top : -420px;
+        margin-right: 20px ;
+        margin-left: 20px ;
+    }
+}
+
+@media only screen and (max-width : 420px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        height : 70vh;
+    }
+    .game {
+        height: 20vh;
+        width : 65%;
+        margin-top: -338px;
+    }
+    .box {
+       height: 65px;
+       width: 65px; 
+       font-size: 2.5rem;
+    }
+    .btn {
+        width : 30vw;
+        padding : 10px;
+        margin-top : -550px;
+        margin-right: 20px ;
+        margin-left: 20px ;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    body {
+        overflow: hidden;
+    }
+    .container {
+        height : 70vh;
+    }
+    .game {
+        height: 20vh;
+        width : 65%;
+        margin-top: -330px;
+    }
+    .box {
+       height: 65px;
+       width: 65px; 
+       font-size: 2.5rem;
+    }
+    .btn {
+        width : 30vw;
+        padding : 10px;
+        margin-top : -500px;
+        margin-right: 20px ;
+        margin-left: 20px ;
+    }
+}
+
+@media only screen and (min-width : 1655px) {
+    body {
+        overflow: hidden;
+    }
+    .box {
+       height: 185px;
+       width: 185px;
+    }
+}
+
+@media only screen and (min-width : 1960px) {
+    body {
+        overflow: hidden;
+    }
+    .game {
+        height : 100%;
+    }
+    .box {
+       height: 30%;
+       width: 25%;
+    }
+}
